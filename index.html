@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+
+  <div class="upper-tab">
+    <button class="upper-btn"><img src="Assets\menu-icon.png" alt="menu-icon" class="upper-icon"></button>
+    <button class="upper-btn"><img src="Assets\youtube-icon.png" alt="YouTubeIndia" class="upper-icon"><big><b>YouTube</b></big></button>
+    
+    <input type="text" id="search-bar"  placeholder="  Search YouTube ">
+    <button class="upper-btn" id="search-btn" onclick="SearchTheContent()"><img src="Assets/magnifyingGlass-icon.png" alt="magnifyingGlass-icon-icon" class="upper-icon" id="search-icon-image"></button>
+
+    <button class="upper-btn"><img src="Assets\mic-icon.png" alt="mic-icon" class="upper-icon"></button>
+    <button class="upper-btn" id="create-btn"><big><b>+  Create</b></big></button>
+    <button class="upper-btn" id="create-btn" onclick="NotificationClicked()"><img src="Assets\notifications-icon.png" alt="notifications-icon" class="upper-icon"></button>
+    <button class="upper-btn" id="account-btn"><img src="Assets\account-icon.png" alt="account-icon" class="upper-icon" onclick="SignedInOrNot()"></button>
+  </div>
+
+
+
+
+  <div class="main-content">
+    <div class="left-icons-tab">
+      <button class="left-btn"> <img src="Assets\Home-icon.png" alt="Home-icon" class="four-icon" onclick="BackToHome()"> <small>Home</small></button>
+      <button class="left-btn"> <img src="Assets\Shorts-icon.png" alt="Shorts-icon" class="four-icon"><small >Shorts</small></button>
+      <button class="left-btn"> <img src="Assets\Subscription-icon.png" alt="Subscriptions-icon" class="four-icon"><small>Subscriptions</small></button>
+      <button class="left-btn" onclick="ClickedOnYou()"> <img src="Assets\You-icon.png" alt="You-icon" class="four-icon"><small>You</small></button>
+      <button class="left-btn"> <img src="Assets\Mode-icon.png" alt="Mode-icon" class="four-icon" onclick="switchMode();"><small>Dark Mode</small></button>
+    </div>
+      
+    <div class="videos-section" id="video-container">
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>
